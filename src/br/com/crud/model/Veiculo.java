@@ -4,7 +4,7 @@ public class Veiculo {
 	private String placa;
 	private String modelo;
 	private int capacidadeTanque;
-	private int anoFabricacao;
+	private Motorista motorista;
 	
 	public Veiculo(String placa, String modelo, int capacidadeTanque){
 		this.placa = placa;
@@ -31,5 +31,18 @@ public class Veiculo {
 	}
 	public int getCapacidadeTanque() {
 		return this.capacidadeTanque;
+	}
+	
+	public Motorista getMotorista() {
+		return this.motorista;
+	}
+	public void setMotorista(Motorista motorista) {
+		this.motorista = motorista;
+	}
+	
+
+	public String toString() {
+	
+		return this.placa;
 	}
 }
