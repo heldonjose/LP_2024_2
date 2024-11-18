@@ -35,12 +35,21 @@ public class Main {
 		
 	}
 	
+	public Motorista buscarMotorista(String cpf) {
+		for(Motorista mot:  motoristas) {
+			if (mot.getCpf().equals(cpf)){
+				return mot;
+			}
+		}
+		return null;
+	}
+	
 	public static void menuVeiculos() {;
 		System.out.println("------menuMotoritas------");
 		System.out.println("1- Cadastrar Veiculo"); //Informar  placa,  modelo e capacidadeTanque, 
 		System.out.println("2- Buscar por placa"); //Informar a placa
 		System.out.println("3- Listar todos os veiculos"); //IMprimir a placa e modelo
-		System.out.println("4- Atribuir um motorista a um veiculo"); //Buscar o motorista pelo cpf, se existir, atribuir
+		System.out.println("4- Atribuir um motorista a um veiculo"); //Buscar o motorista pelo cpf, buscar o veiculo pela placa,se existir, atribuir
 		System.out.println("5- Listar Veiculos por CPF do motorista"); //IMprimir a placa e modelo
 		System.out.println("6- Listar Todos os veiculos que tem capacidade de tanque maior que 50"); 
 		System.out.println("7- SAIR DO Menu de Motorista\n\n"); //Informar o nome e CPF
