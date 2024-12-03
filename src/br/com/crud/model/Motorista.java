@@ -5,7 +5,6 @@ public class Motorista {
 	private String cpf;
 	
 	public Motorista(String nome, String cpf) {
-
 		this.nome = nome;
 		this.cpf = cpf;
 	}
